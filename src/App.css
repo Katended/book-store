@@ -4,7 +4,8 @@
   box-sizing: border-box;
   list-style: none;
 }
-body{
+
+body {
   background-color: #f1f1f1;
 }
 
@@ -45,7 +46,7 @@ body{
 .updatebook button {
   margin-right: 10px;
   font-size: 17px;
-  color:  rgb(25, 173, 192);
+  color: rgb(25, 173, 192);
   border: none;
   background: none;
   font-weight: normal;
