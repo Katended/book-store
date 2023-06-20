@@ -1,3 +1,275 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+.book-section {
+  align-items: center;
+  width: 100%;
+}
+
+.book-section-one {
+  width: 90%;
+  background-color: #fff;
+  height: 150px;
+  margin-left: 3%;
+  padding: 20px;
+  display: flex;
+  border: 1px solid gray;
+  margin-bottom: 3rem;
+  border-radius: 5px;
+}
+
+.genre-section span {
+  color: grey;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.genre-section p {
+  color: rgb(121, 216, 200);
+  font-size: 15px;
+  margin-top: 10px;
+}
+
+.updatebook {
+  margin-top: 30px;
+  display: flex;
+}
+
+.updatebook button {
+  margin-right: 10px;
+  font-size: 18px;
+  color: rgb(121, 216, 200);
+  border: none;
+  background: none;
+  font-weight: normal;
+}
+
+.update-progress button {
+  margin-top: 10px;
+  font-size: 17px;
+  background-color: rgb(25, 173, 192);
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.updatebook button:hover {
+  cursor: pointer;
+}
+
+.left-section-1 {
+  border-left: 3px solid rgb(121, 119, 119);
+  margin-right: 15px;
+}
+
+.progress {
+  margin-left: 150px;
+  display: flex;
+  align-items: center;
+  margin-right: 40px;
+  gap: 15px;
+}
+
+.progress .prt {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  transform: rotate(270deg);
+}
+
+.progress .prt svg {
+  position: relative;
+  width: 150px;
+  height: 150px;
+}
+
+.progress .prt svg circle {
+  width: 100%;
+  height: 100%;
+  fill: transparent;
+  stroke-width: 7;
+  stroke: #bbb9b9;
+  transform: translate(5px, 5px);
+}
+
+.progress .prt svg circle:nth-child(2) {
+  stroke: var(--clr);
+  stroke-dasharray: 350;
+  stroke-dashoffset: 0;
+}
+
+.output h3 {
+  font-size: 40px;
+  font-weight: lighter;
+}
+
+.output span {
+  color: #a5a4a4;
+}
+
+.left-section-2 {
+  border-left: 2px solid rgb(121, 119, 119);
+  margin-left: 45px;
+  height: 100px;
+  margin-top: 0;
+}
+
+.update-progress {
+  margin-left: 50px;
+  gap: 10px;
+}
+
+.update-progress span {
+  padding-bottom: 70px;
+  color: #a5a4a4;
+}
+
+.update-progress h4 {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  font-size: 18px;
+  color: #5e5c5c;
+}
+
+.update-progress button:hover {
+  cursor: pointer;
+}
+
+.hl {
+  border-top: 2px solid grey;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  width: 85rem;
+  margin-left: 3%;
+}
+
+.addBook-container h2 {
+  margin-left: 3rem;
+  margin-bottom: 20px;
+  color: #7c7a7a;
+}
+
+.addBook-content {
+  margin-left: 70px;
+  margin-bottom: 3rem;
+}
+
+.addBook-content .input-text {
+  width: 35%;
+  height: 40px;
+  margin-right: 55px;
+  padding-left: 10px;
+  border-radius: 5px;
+  border: 1px solid gray;
+  margin-left: -1.5rem;
+}
+
+.author-input {
+  width: 35%;
+  height: 40px;
+  padding-left: 10px;
+  margin-right: 55px;
+  border-radius: 5px;
+  border: 1px solid gray;
+}
+
+.addBtn {
+  font-size: 18px;
+  width: 15%;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: rgb(25, 173, 192);
+  color: #fff;
+  border: none;
+  height: 40px;
+  margin-left: 2rem;
+}
+
+.addBtn:hover {
+  cursor: pointer;
+}
+
+.book {
+  margin-top: 20px;
+  padding-left: 20px;
+}
+
+.categories {
+  margin-top: 12rem;
+  padding-left: 35rem;
+  color: blue;
+}
+
+.login-btn {
+  margin-left: 44rem;
+  color: rgb(0, 174, 255);
+  font-size: 25px;
+  border-radius: 70%;
+  border: 1px solid gray;
+  width: 60px;
+  padding-bottom: 10px;
+  height: 60px;
+  background-color: rgb(245, 247, 247);
+}
+
+.login-btn:hover {
+  cursor: pointer;
+}
+
+.navbar {
+  width: 100%;
+  background-color: rgb(246, 250, 250);
+  height: 85px;
+}
+
+nav {
+  display: flex;
+  gap: 5rem;
+  align-items: center;
+  padding-top: 20px;
+  width: 100%;
+}
+
+.logo {
+  margin-right: 10%;
+  margin-left: 4%;
+  text-decoration: none;
+  font-size: 30px;
+  font-weight: bold;
+  color: rgb(0, 174, 255);
+}
+
+nav ul {
+  display: flex;
+  gap: 5rem;
+  list-style: none;
+}
+
+nav ul li a {
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
+  margin-left: -9rem;
+}
+
+#catButton {
+  font-size: 18px;
+  width: 15%;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: rgb(25, 173, 192);
+  color: #fff;
+  border: none;
+  height: 40px;
+  margin-left: 0;
+  margin-top: 5rem;
+}
+
+#catButton:hover {
+  cursor: pointer;
 }
