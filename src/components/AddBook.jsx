@@ -8,7 +8,7 @@ const AddBook = () => {
   const dispatch = useDispatch();
   const [title, setTitle] = useState('');
   const [author, setAuthor] = useState('');
-  const [genre, setGenre] = useState('action');
+  const [category, setCategory] = useState('Action');
 
   const handleAddBook = () => {
     if (title.trim() === '' || author.trim() === '') {
@@ -19,12 +19,12 @@ const AddBook = () => {
         id: uuidv4(),
         title,
         author,
-        genre,
+        category,
       }),
     );
     setTitle('');
     setAuthor('');
-    setGenre('action');
+    setCategory('');
   };
 
   return (
