@@ -1,27 +1,22 @@
-import './index.css';
+import './App.css';
 import React from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Navbar from './components/NavBar';
-import BooksPage from './components/BooksPage';
-import CategoriesPage from './components/CateogoriesPage';
-
-const dummyList = [{
-  id: 1, title: 'The Convenat of Water', author: 'Abrahan Verghese',
-}, {
-  id: 2, title: 'Forth Wing', author: 'Rebecca',
-}, {
-  id: 3, title: 'This is going to hurt', author: 'Adam Kay',
-}];
+import { Routes, Route } from 'react-router-dom';
+import Books from './components/Books';
+import Categories from './components/Categories';
+import Navigation from './components/Navigation';
 
 function App() {
   return (
-    <Router>
-      <Navbar />
+    <div className="App">
+
+      <Navigation />
       <Routes>
-        <Route exact path="/" element={<BooksPage bookList={dummyList} />} />
-        <Route exact path="/categories" element={<CategoriesPage />} />
+        <Route path="/" element={<Books />} />
+        <Route path="/Categories" element={<Categories />} />
       </Routes>
-    </Router>
+
+    </div>
   );
 }
+
 export default App;

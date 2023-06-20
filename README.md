@@ -2,7 +2,7 @@
 
 <div align="center">
 
-  <h3><b>CALCULATOR</b></h3>
+  <h3><b>BOOKSTORE</b></h3>
 
 </div>
 
@@ -29,7 +29,7 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 MATH MAGICIAN APP <a name="about-project"></a>
+# 📖 BOOKSTORE APP <a name="about-project"></a>
 
 This is Bookstore App where you can add and remove books.
 
@@ -40,14 +40,17 @@ Read a random math-related quote.
 
 ### Tech Stack <a name="tech-stack"></a>
 <details>
-  <summary>HTML5, CSS3 , React.js, Javascript,Redux</summary>
+  <summary>HTML5, CSS3 , React.js, Javascript,Redux Toolkit</summary>
 </details>
 
 <!-- Features -->
 
 ### Key Features <a name="key-features"></a>
 
-- **Make Calculations**
+ **Interactive Webpage**
+- **Add/Remove Functions**
+- **API Interaction**
+- **ReactJS and Redux**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -81,7 +84,7 @@ git clone git@github.com:Katended/book-store.git
 
 To install this project run this into your terminal:
 
-+ git clone git@github.com:Katended/math-magicians.git
++ git clone git@github.com:Katended/book-store.git
 + run npm install to install all dependecies
 
 
