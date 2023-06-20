@@ -1,0 +1,29 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  background-color: rgb(240, 234, 234);
+  display: flex;
+  justify-content: center;
+  color: black;
+}
+
+nav {
+  display: flex;
+}
+
+nav > ul {
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+}
+
+nav ul > * {
+  display: inline-block;
+  margin-right: 20px;
+}
