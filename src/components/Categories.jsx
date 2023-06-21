@@ -1,31 +1,21 @@
 import React from 'react';
-import { useSelector } from 'react-redux';
+import { useSelector, useDispatch } from 'react-redux';
+import { toggleStatus } from '../redux/categories/categoriesSlice';
 import '../App.css';
-import Book from './Book';
-import AddBook from './AddBook';
 
-const Books = () => {
-  const books = useSelector((state) => state.books || []);
+const Categories = () => {
+  const dispatch = useDispatch();
+  const status = useSelector((state) => state.categories.status);
+
+  const handleClick = () => {
+    dispatch(toggleStatus());
+  };
 
   return (
-
-    <div className="book">
-      <div className="book-section">
-
-        {books.map((book) => (
-          <Book
-            key={book.id}
-            id={book.id}
-            title={book.title}
-            author={book.author}
-            genre={book.genre}
-          />
-        ))}
-
-        <AddBook />
-      </div>
+    <div className="categories">
+      <h1>{status}</h1>
+      <button id="catButton" type="button" onClick={handleClick}>Toggle Status</button>
     </div>
   );
 };
-
-export default Books;
+export default Categories;
