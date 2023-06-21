@@ -1,21 +1,20 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { useDispatch } from 'react-redux';
-import { removeBook } from '../redux/books/booksSlice';
+import { DeleteBookApi } from '../redux/books/booksSlice';
 import '../App.css';
 
 const Book = ({
-  id, title, author, category,
+  id, title, author,
 }) => {
   const dispatch = useDispatch();
   const handleRemoveBook = () => {
-    dispatch(removeBook(id));
+    dispatch(DeleteBookApi(id));
   };
 
   return (
     <div key={id} className="book-section-one">
       <div className="genre-section">
-        <span>{category}</span>
         <div className="book-title">
           <h2>{title}</h2>
         </div>
@@ -63,7 +62,6 @@ Book.propTypes = {
   id: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
   author: PropTypes.string.isRequired,
-  category: PropTypes.string.isRequired,
 };
 
 export default Book;

@@ -1,55 +1,48 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { useDispatch } from 'react-redux';
-import { v4 as uuidv4 } from 'uuid';
-import { addBook } from '../redux/books/booksSlice';
+import { addBookApi } from '../redux/books/booksSlice';
 import '../App.css';
 
 const AddBook = () => {
   const dispatch = useDispatch();
   const [title, setTitle] = useState('');
   const [author, setAuthor] = useState('');
-  const [category, setCategory] = useState('Action');
+  const submitHandler = async (event) => {
+    event.preventDefault();
+    const newBook = {
+      item_id: Date.now().toString(),
+      title,
+      author,
+      category: '',
+    };
 
-  const handleAddBook = () => {
-    if (title.trim() === '' || author.trim() === '') {
-      return;
-    }
-    dispatch(
-      addBook({
-        id: uuidv4(),
-        title,
-        author,
-        category,
-      }),
-    );
+    await dispatch(addBookApi(newBook));
+
+    // Reset form values after the dispatch is complete
     setTitle('');
     setAuthor('');
-    setCategory('');
   };
 
   return (
-    <div className="addBook-container">
-      <div className="hl" />
-      <h2>ADD NEW BOOK</h2>
-      <div className="addBook-content">
+    <div className="newbook">
+      <h3>ADD BOOK</h3>
+      <form onSubmit={submitHandler}>
         <input
-          className="input-text"
           type="text"
-          placeholder="Book title"
           value={title}
           onChange={(e) => setTitle(e.target.value)}
+          placeholder=" New Book"
+          required
         />
         <input
-          className="author-input"
           type="text"
-          placeholder="Author"
           value={author}
           onChange={(e) => setAuthor(e.target.value)}
+          placeholder=" Add Author"
+          required
         />
-        <button type="button" className="addBtn" onClick={handleAddBook}>Add Book</button>
-
-      </div>
-
+        <button type="submit">Add Book</button>
+      </form>
     </div>
   );
 };
