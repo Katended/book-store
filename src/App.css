@@ -11,16 +11,14 @@ body {
 
 .newbook {
   display: flex;
-  margin:auto;
+  margin: auto;
   flex-direction: column;
-  justify-content:center;
+  justify-content: center;
   align-items: center;
-  gap:1em;
-
+  gap: 1em;
 }
 
-
-.newbook button {  
+.newbook button {
   margin-top: 10px;
   font-size: 12px;
   background-color: rgb(25, 173, 192);
@@ -41,16 +39,16 @@ body {
   margin-bottom: 2rem;
   border-radius: 5px;
   justify-content: space-between;
-
 }
+
 .genre-section {
   width: 35%;
 }
+
 .genre-section span {
   color: rgb(206, 205, 205);
   font-size: 20px;
   margin-bottom: 10px;
- 
 }
 
 .genre-section p {
@@ -92,12 +90,11 @@ body {
   margin-right: 15px;
 }
 
-.progress {  
+.progress {
   display: flex;
-  align-items: center; 
+  align-items: center;
   gap: 10px;
-  justify-content:center;
-  align-items: center; 
+  justify-content: center;
 }
 
 .progress .prt {
@@ -177,7 +174,6 @@ body {
   margin-left: 3rem;
   margin-bottom: 20px;
   color: #7c7a7a;
-  
 }
 
 .addBook-content {
