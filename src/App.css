@@ -9,21 +9,40 @@ body {
   background-color: #f1f1f1;
 }
 
-.book-section {
+.newbook {
+  display: flex;
+  margin: auto;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  width: 100%;
+  gap: 1em;
+}
+
+.newbook button {
+  margin-top: 10px;
+  font-size: 12px;
+  background-color: rgb(25, 173, 192);
+  color: white;
+  border: none;
+  padding: 5px;
+  border-radius: 5px;
 }
 
 .book-section-one {
-  width: 90%;
+  width: 93%;
   background-color: white;
-  height: 150px;
+  height: 170px;
   margin-left: 3%;
   padding: 20px;
   display: flex;
   border: 1px solid rgb(221, 220, 220);
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
   border-radius: 5px;
+  justify-content: space-between;
+}
+
+.genre-section {
+  width: 35%;
 }
 
 .genre-section span {
@@ -72,11 +91,10 @@ body {
 }
 
 .progress {
-  margin-left: 150px;
   display: flex;
   align-items: center;
-  margin-right: 40px;
-  gap: 15px;
+  gap: 10px;
+  justify-content: center;
 }
 
 .progress .prt {
