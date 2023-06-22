@@ -1,71 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap');
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   list-style: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-family: 'RobotoSlab-Light', sans-serif;
+  color: #4386bf;
 }
 
 body {
   background-color: #f1f1f1;
+  font-family: 'Roboto', sans-serif;
 }
 
-.newbook {
+nav > button {
+  margin-left: auto;
+}
+
+form {
   display: flex;
-  margin: auto;
-  flex-direction: column;
-  justify-content: center;
   align-items: center;
   gap: 1em;
 }
 
+.newbook {
+  margin-left: 3%;
+ padding-bottom:10px;
+}
+
+.newbook > h3 {
+  color: #888;
+  font-size: 1.45rem;
+  font-family: 'Montserrat-Bold', sans-serif;
+  margin-bottom: 10px;
+}
+
 .newbook button {
-  margin-top: 10px;
   font-size: 12px;
   background-color: rgb(25, 173, 192);
   color: white;
   border: none;
-  padding: 5px;
+  padding: 10px;
   border-radius: 5px;
+  width: 18%;
+  font-family: 'RobotoSlab Light', sans-serif;
+  letter-spacing: 0.1em;
+}
+
+input,
+select {
+  width: 55%;
+  height: 35px;
+  padding:5px;
+}
+
+select {
+  width: 200px;
+  height: 35px;
+}
+
+.book-title > h2 {
+  font-family: 'RobotoSlab Bold', sans-serif;
+  font-size: 1.375rem;
+  padding-top: 0.4em;
 }
 
 .book-section-one {
   width: 93%;
   background-color: white;
-  height: 170px;
+  height: 12.5em;
   margin-left: 3%;
   padding: 20px;
   display: flex;
   border: 1px solid rgb(221, 220, 220);
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   border-radius: 5px;
   justify-content: space-between;
 }
 
 .genre-section {
   width: 35%;
+  padding-top: 1em;
 }
 
 .genre-section span {
   color: rgb(206, 205, 205);
-  font-size: 20px;
+  font-size: 13px;
   margin-bottom: 10px;
 }
 
 .genre-section p {
-  color: rgb(121, 216, 200);
-  font-size: 15px;
+  font-size: 0.875rem;
   margin-top: 10px;
+  margin-bottom:50px;
+  color: #4386bf;
+  font-family: 'RobotoSlab-Light', sans-serif;
 }
 
 .updatebook {
-  margin-top: 30px;
   display: flex;
+  color: #e8e8e8;
 }
 
 .updatebook button {
   margin-right: 10px;
-  font-size: 17px;
-  color: rgb(25, 173, 192);
+  font-size: 0.875rem;
+  color: #4386bf;
   border: none;
   background: none;
   font-weight: normal;
@@ -77,8 +123,11 @@ body {
   background-color: rgb(25, 173, 192);
   color: white;
   border: none;
-  padding: 4px;
+  padding: 10px;
   border-radius: 5px;
+  width: 100%;
+  font-family: 'RobotoSlab Light', sans-serif;
+  letter-spacing: 0.1em;
 }
 
 .updatebook button:hover {
@@ -86,7 +135,7 @@ body {
 }
 
 .left-section-1 {
-  border-left: 3px solid rgb(121, 119, 119);
+  border-left: 1px solid#e8e8e8;
   margin-right: 15px;
 }
 
@@ -114,48 +163,54 @@ body {
   width: 100%;
   height: 100%;
   fill: transparent;
-  stroke-width: 7;
+  stroke-width: 5;
   stroke: #bbb9b9;
   transform: translate(5px, 5px);
 }
 
 .progress .prt svg circle:nth-child(2) {
   stroke: var(--clr);
-  stroke-dasharray: 350;
+  stroke-dasharray: 150;
   stroke-dashoffset: 0;
 }
 
 .output h3 {
-  font-size: 40px;
+  font-size: 2rem;
   font-weight: lighter;
+  font-family: Montserrat-Regular, sans-serif;
+  letter-spacing: normal;
 }
 
 .output span {
   color: #a5a4a4;
+  font-size: 0.975rem;
+  font-family: Montserrat-Regular, sans-serif;
 }
 
 .left-section-2 {
-  border-left: 2px solid rgb(121, 119, 119);
+  border-left: 1px solid #e8e8e8;
   margin-left: 45px;
   height: 100px;
-  margin-top: 0;
+  margin-top: 1.2em;
 }
 
 .update-progress {
-  margin-left: 50px;
-  gap: 10px;
+  margin-right: 90px;
 }
 
 .update-progress span {
   padding-bottom: 70px;
-  color: #a5a4a4;
+  color: #c0c0c0;
+  letter-spacing: 0.1em;
+  font-family: RobotoSlab-Light, sans-serif;
 }
 
 .update-progress h4 {
   margin-top: 15px;
   margin-bottom: 15px;
-  font-size: 18px;
-  color: #5e5c5c;
+  font-size: 1.1rem;
+  color: #121212;
+  font-family: RobotoSlab-Light, sans-serif;
 }
 
 .update-progress button:hover {
@@ -228,15 +283,14 @@ body {
 }
 
 .login-btn {
-  margin-left: 44rem;
   color: rgb(0, 174, 255);
-  font-size: 25px;
-  border-radius: 70%;
-  border: 1px solid gray;
-  width: 60px;
-  padding-bottom: 10px;
-  height: 60px;
-  background-color: rgb(245, 247, 247);
+  font-size: 18px;
+  border-radius: 50%;
+  border: 1px solid #e8e8e8;
+  width: 44px;
+  padding-bottom: 7px;
+  background-color: white;
+  height: 44px;
 }
 
 .login-btn:hover {
@@ -244,39 +298,52 @@ body {
 }
 
 .navbar {
-  width: 100%;
-  background-color: rgb(246, 250, 250);
-  height: 85px;
+  display: flex;
+  height: 110px;
+  border-bottom: 1px solid #e8e8e8;
+  background-color: #fff;
 }
 
 nav {
   display: flex;
-  gap: 5rem;
+  gap: 3rem;
   align-items: center;
   padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 50px;
   width: 100%;
+  flex-wrap: wrap;
+  justify-content: left;
+}
+
+small {
+  color: #b4b4b4;
+  font-size: 1rem;
+  font-family: Montserrat-Bold, sans-serif;
 }
 
 .logo {
-  margin-right: 10%;
+  font-family: 'Montserrat-Bold', sans-serif;
   margin-left: 4%;
   text-decoration: none;
-  font-size: 30px;
-  font-weight: bold;
-  color: rgb(0, 174, 255);
+  font-size: 1.875rem;
+  color: #0290ff;
 }
 
 nav ul {
   display: flex;
-  gap: 5rem;
+  gap: 3rem;
   list-style: none;
+  justify-content: left;
 }
 
 nav ul li a {
+  font-family: 'Montserrat-Regular', sans-serif;
   text-decoration: none;
-  font-size: 20px;
-  font-weight: bold;
-  margin-left: -9rem;
+  font-size: 13px;
+  letter-spacing: 0.2em;
+  color: #121212;
 }
 
 #catButton {

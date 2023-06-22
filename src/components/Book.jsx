@@ -1,8 +1,8 @@
+import '../App.css';
 import React from 'react';
 import PropTypes from 'prop-types';
 import { useDispatch } from 'react-redux';
 import { DeleteBookApi } from '../redux/books/booksSlice';
-import '../App.css';
 
 const Book = ({
   id, title, author,
@@ -15,6 +15,7 @@ const Book = ({
   return (
     <div key={id} className="book-section-one">
       <div className="genre-section">
+        <small id="book-category">Action</small>
         <div className="book-title">
           <h2>{title}</h2>
         </div>
@@ -36,8 +37,8 @@ const Book = ({
           }}
         >
           <svg>
-            <circle cx={70} cy={70} r={70} />
-            <circle cx={70} cy={70} r={70} />
+            <circle cx={70} cy={70} r={40} />
+            <circle cx={70} cy={70} r={40} />
           </svg>
         </div>
         <div className="output">
@@ -48,7 +49,7 @@ const Book = ({
       <div className="left-section-2" />
 
       <div className="update-progress">
-        <span>Current Chapter</span>
+        <span>CURRENT CHAPTER</span>
         <h4>Chapter 17</h4>
 
         <button type="button">UPDATE PROGRESS</button>

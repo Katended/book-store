@@ -1,7 +1,7 @@
+import '../App.css';
 import { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { addBookApi } from '../redux/books/booksSlice';
-import '../App.css';
 
 const AddBook = () => {
   const dispatch = useDispatch();
@@ -25,22 +25,18 @@ const AddBook = () => {
 
   return (
     <div className="newbook">
-      <h3>ADD BOOK</h3>
+      <h3>ADD NEW BOOK</h3>
       <form onSubmit={submitHandler}>
         <input
           type="text"
           value={title}
           onChange={(e) => setTitle(e.target.value)}
-          placeholder=" New Book"
+          placeholder="Book Title"
           required
         />
-        <input
-          type="text"
-          value={author}
-          onChange={(e) => setAuthor(e.target.value)}
-          placeholder=" Add Author"
-          required
-        />
+        <select>
+          <option value="" hidden selected>Category</option>
+        </select>
         <button type="submit">Add Book</button>
       </form>
     </div>
