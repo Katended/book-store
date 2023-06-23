@@ -1,14 +1,14 @@
 <a name="readme-top"></a>
-
+<img height='150px' width='200px' style="margin: auto" src="./logo.PNG">
 <div align="center">
 
-  <h3><b>BOOKSTORE</b></h3>
+# BOOKSTORE
 
 </div>
 
 <!-- TABLE OF CONTENTS -->
 
-# 📗 Table of Contents
+## 📗 Table of Contents
 
 - [📖 About the Project](#about-project)
   - [🛠 Built With](#built-with)
@@ -29,7 +29,7 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 BOOKSTORE APP <a name="about-project"></a>
+## 📖 BOOKSTORE APP <a name="about-project"></a>
 
 This is Bookstore App where you can add and remove books.
 

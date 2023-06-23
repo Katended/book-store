@@ -1,9 +1,9 @@
+import '../App.css';
 import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { fetchBooks } from '../redux/books/booksSlice';
 import Book from './Book';
 import AddBook from './AddBook';
-import '../App.css';
 
 const Books = () => {
   const { books } = useSelector((state) => state.books);
@@ -16,7 +16,6 @@ const Books = () => {
 
     <div className="book">
       <div className="book-section">
-        <AddBook />
         {Object.keys(books)
           && Object.keys(books).map((key) => books[key].map((book) => (
             <Book
@@ -26,6 +25,7 @@ const Books = () => {
               author={book.author}
             />
           )))}
+        <AddBook />
       </div>
     </div>
   );

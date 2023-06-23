@@ -1,17 +1,17 @@
+import '../App.css';
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUser } from '@fortawesome/free-solid-svg-icons';
-import '../App.css';
 
 const navbars = [
   {
     to: '/',
-    text: 'Books',
+    text: 'BOOKS',
   },
   {
     to: '/Categories',
-    text: 'Categories',
+    text: 'CATEGORIES',
   },
 ];
 
@@ -28,9 +28,11 @@ const Navigation = () => (
           </li>
         ))}
       </ul>
+
       <button type="button" className="login-btn">
         <FontAwesomeIcon icon={faUser} />
       </button>
+
     </nav>
   </div>
 );
