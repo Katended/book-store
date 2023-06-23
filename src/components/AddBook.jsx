@@ -31,13 +31,17 @@ const AddBook = () => {
           type="text"
           value={title}
           onChange={(e) => setTitle(e.target.value)}
-          placeholder="Book Title"
+          placeholder="Book title"
           required
         />
-        <select>
-          <option value="" hidden selected>Category</option>
-        </select>
-        <button type="submit">Add Book</button>
+        <input
+          type="text"
+          value={author}
+          onChange={(e) => setAuthor(e.target.value)}
+          placeholder="Author"
+          required
+        />
+        <button type="submit">ADD BOOK</button>
       </form>
     </div>
   );

@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;700&family=Roboto:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,700;1,100;1,200;1,300&display=swap');
 
 * {
   margin: 0;
@@ -10,12 +11,12 @@
 }
 
 a {
-  font-family: 'RobotoSlab-Light', sans-serif;
+  font-family: Roboto Slab, sans-serif;
   color: #4386bf;
 }
 
 body {
-  background-color: #f1f1f1;
+  background-color: #fafafa;
   font-family: 'Roboto', sans-serif;
 }
 
@@ -30,62 +31,106 @@ form {
 }
 
 .newbook {
+<<<<<<< Updated upstream
   margin-left: 3%;
   padding-bottom: 10px;
+=======
+  border-top: solid 1px #e8e8e8;
+  margin-left: 1%;
+  padding-bottom: 14px;
+  width: 100%;
+  margin-top: 3%;
+>>>>>>> Stashed changes
 }
 
 .newbook > h3 {
+  font-size: 1.25rem;
+  font-family: 'Montserrat', sans-serif;
+  height: 1rem;
+  width: 50%;
+  margin: 1.813rem 32.75rem 1.188rem 0;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -0.18px;
   color: #888;
-  font-size: 1.45rem;
-  font-family: 'Montserrat-Bold', sans-serif;
-  margin-bottom: 10px;
 }
 
 .newbook button {
   font-size: 12px;
-  background-color: rgb(25, 173, 192);
+  background-color: rgb(2, 144, 255);
   color: white;
   border: none;
-  padding: 10px;
-  border-radius: 5px;
+  padding: 0.801rem 1.188rem 0.886rem 1.375rem;
+  border-radius: 3px;
   width: 18%;
-  font-family: 'RobotoSlab Light', sans-serif;
+  height: 2.713rem;
+  font-family: Roboto Slab, sans-serif;
+  font-weight: bold;
   letter-spacing: 0.1em;
 }
 
+<<<<<<< Updated upstream
 input,
 select {
   width: 55%;
   height: 35px;
   padding: 5px;
+=======
+input {
+  width: 30%;
+  height: 2.513rem;
+  padding: 5px;
+  font-size: 1rem;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -0.15px;
+  font-family: Montserrat, sans-serif;
+  border: 1px solid #e8e8e8;
+  outline: none;
+>>>>>>> Stashed changes
 }
 
-select {
-  width: 200px;
-  height: 35px;
+input::placeholder {
+  color: #d4d4d4;
 }
 
 .book-title > h2 {
-  font-family: 'RobotoSlab Bold', sans-serif;
+  width: 100%;
+  height: 1.813rem;
+  margin: 0.188rem 20.188rem 0 0;
+  font-family: Roboto Slab, sans-serif;
   font-size: 1.375rem;
-  padding-top: 0.4em;
+  font-weight: 900;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  color: #121212;
 }
 
 .book-section-one {
-  width: 93%;
+  width: 100%;
   background-color: white;
-  height: 12.5em;
-  margin-left: 3%;
-  padding: 20px;
+  height: 10%;
+  margin-left: 1%;
+  padding-top: 2px;
+  padding-bottom: 15px;
+  padding-left: 25px;
   display: flex;
   border: 1px solid rgb(221, 220, 220);
   margin-bottom: 1rem;
+  margin-top: 1.5rem;
   border-radius: 5px;
   justify-content: space-between;
+  flex-wrap: nowrap;
+  flex-grow: 1;
 }
 
 .genre-section {
-  width: 35%;
+  width: auto;
   padding-top: 1em;
 }
 
@@ -96,11 +141,22 @@ select {
 }
 
 .genre-section p {
+  width: 6.688rem;
+  height: 3.188rem;
+  margin: 0.25rem 0 0;
+  font-family: Roboto Slab, sans-serif;
   font-size: 0.875rem;
+<<<<<<< Updated upstream
   margin-top: 10px;
   margin-bottom: 50px;
+=======
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+>>>>>>> Stashed changes
   color: #4386bf;
-  font-family: 'RobotoSlab-Light', sans-serif;
 }
 
 .updatebook {
@@ -109,25 +165,36 @@ select {
 }
 
 .updatebook button {
-  margin-right: 10px;
+  width: 4.563rem;
+  height: 1.188rem;
+  margin: 0.188rem 0.938rem 0.125rem 0;
+  font-family: Roboto Slab, sans-serif;
+  background-color: transparent;
   font-size: 0.875rem;
-  color: #4386bf;
   border: none;
-  background: none;
-  font-weight: normal;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #4386bf;
 }
 
 .update-progress button {
   margin-top: 10px;
-  font-size: 12px;
-  background-color: rgb(25, 173, 192);
+  font-family: Roboto Slab, sans-serif;
+  font-size: 0.813rem;
+  letter-spacing: 0.5px;
+  font-weight: 300;
+  background-color: rgb(2, 144, 255);
   color: white;
   border: none;
   padding: 10px;
   border-radius: 5px;
-  width: 100%;
-  font-family: 'RobotoSlab Light', sans-serif;
-  letter-spacing: 0.1em;
+  width: 50%;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
 }
 
 .updatebook button:hover {
@@ -142,14 +209,13 @@ select {
 .progress {
   display: flex;
   align-items: center;
-  gap: 10px;
   justify-content: center;
 }
 
 .progress .prt {
   position: relative;
-  width: 150px;
-  height: 150px;
+  width: 100%;
+  height: 140px;
   transform: rotate(270deg);
 }
 
@@ -160,11 +226,11 @@ select {
 }
 
 .progress .prt svg circle {
-  width: 100%;
-  height: 100%;
+  width: 70%;
+  height: 70%;
   fill: transparent;
   stroke-width: 5;
-  stroke: #bbb9b9;
+  stroke: #f3f3f3;
   transform: translate(5px, 5px);
 }
 
@@ -175,42 +241,70 @@ select {
 }
 
 .output h3 {
+  width: 4.25rem;
+  height: 2.438rem;
   font-size: 2rem;
-  font-weight: lighter;
-  font-family: Montserrat-Regular, sans-serif;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
   letter-spacing: normal;
+  color: #121212;
+  font-family: Montserrat, sans-serif;
 }
 
 .output span {
-  color: #a5a4a4;
-  font-size: 0.975rem;
-  font-family: Montserrat-Regular, sans-serif;
+  width: 5rem;
+  height: 1.125rem;
+  opacity: 0.5;
+  font-family: Roboto Slab, sans-serif;
+  font-size: 0.875rem;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #121212;
 }
 
 .left-section-2 {
-  border-left: 1px solid #e8e8e8;
+  border-left: 1px solid #f7f7f7;
   margin-left: 45px;
   height: 100px;
   margin-top: 1.2em;
 }
 
 .update-progress {
-  margin-right: 90px;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  width: 100%;
+  padding-left: 5%;
 }
 
 .update-progress span {
-  padding-bottom: 70px;
-  color: #c0c0c0;
-  letter-spacing: 0.1em;
-  font-family: RobotoSlab-Light, sans-serif;
+  height: 1.525rem;
+  opacity: 0.5;
+  font-family: Roboto Slab, sans-serif;
+  font-size: 0.913rem;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #616060;
 }
 
 .update-progress h4 {
-  margin-top: 15px;
-  margin-bottom: 15px;
-  font-size: 1.1rem;
+  width: 30%;
+  height: 1.813rem;
+  font-family: Roboto Slab, sans-serif;
+  font-size: 1rem;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
   color: #121212;
-  font-family: RobotoSlab-Light, sans-serif;
 }
 
 .update-progress button:hover {
@@ -218,7 +312,7 @@ select {
 }
 
 .hl {
-  border-top: 2px solid grey;
+  border-top: 1px solid grey;
   margin-top: 10px;
   margin-bottom: 20px;
   width: 85rem;
@@ -272,8 +366,8 @@ select {
 }
 
 .book {
-  margin-top: 20px;
-  padding-left: 20px;
+  margin: auto;
+  width: 90%;
 }
 
 .categories {
@@ -283,14 +377,14 @@ select {
 }
 
 .login-btn {
-  color: rgb(0, 174, 255);
-  font-size: 18px;
+  color: #0290ff;
+  font-size: 15px;
   border-radius: 50%;
   border: 1px solid #e8e8e8;
-  width: 44px;
-  padding-bottom: 7px;
+  width: 37px;
+  padding-bottom: 3px;
   background-color: white;
-  height: 44px;
+  height: 37px;
 }
 
 .login-btn:hover {
@@ -299,33 +393,42 @@ select {
 
 .navbar {
   display: flex;
-  height: 110px;
+  height: 100px;
   border-bottom: 1px solid #e8e8e8;
   background-color: #fff;
+  width: 100%;
 }
 
 nav {
   display: flex;
   gap: 3rem;
   align-items: center;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  padding-left: 20px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 25px;
   padding-right: 50px;
   width: 100%;
-  flex-wrap: wrap;
   justify-content: left;
 }
 
 small {
-  color: #b4b4b4;
-  font-size: 1rem;
-  font-family: Montserrat-Bold, sans-serif;
+  width: 3.063rem;
+  height: 1.125rem;
+  margin: 0 2.438rem 0 0;
+  opacity: 0.5;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.975rem;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #121212;
 }
 
 .logo {
-  font-family: 'Montserrat-Bold', sans-serif;
-  margin-left: 4%;
+  font-family: 'Montserrat', sans-serif;
+  margin-left: 4.9%;
   text-decoration: none;
   font-size: 1.875rem;
   color: #0290ff;
@@ -339,7 +442,7 @@ nav ul {
 }
 
 nav ul li a {
-  font-family: 'Montserrat-Regular', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   text-decoration: none;
   font-size: 13px;
   letter-spacing: 0.2em;
