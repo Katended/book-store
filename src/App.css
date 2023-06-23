@@ -31,7 +31,7 @@ form {
 
 .newbook {
   margin-left: 3%;
- padding-bottom:10px;
+  padding-bottom: 10px;
 }
 
 .newbook > h3 {
@@ -57,7 +57,7 @@ input,
 select {
   width: 55%;
   height: 35px;
-  padding:5px;
+  padding: 5px;
 }
 
 select {
@@ -98,7 +98,7 @@ select {
 .genre-section p {
   font-size: 0.875rem;
   margin-top: 10px;
-  margin-bottom:50px;
+  margin-bottom: 50px;
   color: #4386bf;
   font-family: 'RobotoSlab-Light', sans-serif;
 }
