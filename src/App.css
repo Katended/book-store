@@ -31,16 +31,11 @@ form {
 }
 
 .newbook {
-<<<<<<< Updated upstream
-  margin-left: 3%;
-  padding-bottom: 10px;
-=======
   border-top: solid 1px #e8e8e8;
   margin-left: 1%;
   padding-bottom: 14px;
   width: 100%;
   margin-top: 3%;
->>>>>>> Stashed changes
 }
 
 .newbook > h3 {
@@ -71,13 +66,6 @@ form {
   letter-spacing: 0.1em;
 }
 
-<<<<<<< Updated upstream
-input,
-select {
-  width: 55%;
-  height: 35px;
-  padding: 5px;
-=======
 input {
   width: 30%;
   height: 2.513rem;
@@ -91,7 +79,6 @@ input {
   font-family: Montserrat, sans-serif;
   border: 1px solid #e8e8e8;
   outline: none;
->>>>>>> Stashed changes
 }
 
 input::placeholder {
@@ -146,16 +133,11 @@ input::placeholder {
   margin: 0.25rem 0 0;
   font-family: Roboto Slab, sans-serif;
   font-size: 0.875rem;
-<<<<<<< Updated upstream
-  margin-top: 10px;
-  margin-bottom: 50px;
-=======
   font-weight: 300;
   font-stretch: normal;
   font-style: normal;
   line-height: normal;
   letter-spacing: normal;
->>>>>>> Stashed changes
   color: #4386bf;
 }
 
