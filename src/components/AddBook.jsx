@@ -40,6 +40,7 @@ const AddBook = () => {
           onChange={(e) => setAuthor(e.target.value)}
           placeholder="Author"
           required
+          className="authur"
         />
         <button type="submit">ADD BOOK</button>
       </form>

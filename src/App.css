@@ -42,7 +42,7 @@ form {
   font-size: 1.25rem;
   font-family: 'Montserrat', sans-serif;
   height: 1rem;
-  width: 50%;
+  width: 100%;
   margin: 1.813rem 32.75rem 1.188rem 0;
   font-weight: bold;
   font-stretch: normal;
@@ -59,15 +59,15 @@ form {
   border: none;
   padding: 0.801rem 1.188rem 0.886rem 1.375rem;
   border-radius: 3px;
-  width: 18%;
-  height: 2.713rem;
+  width: 11.5rem;
+  height: 2.813rem;
   font-family: Roboto Slab, sans-serif;
   font-weight: bold;
   letter-spacing: 0.1em;
 }
 
 input {
-  width: 30%;
+  width: 70%;
   height: 2.513rem;
   padding: 5px;
   font-size: 1rem;
@@ -79,6 +79,10 @@ input {
   font-family: Montserrat, sans-serif;
   border: 1px solid #e8e8e8;
   outline: none;
+}
+
+.authur {
+  width: 30%;
 }
 
 input::placeholder {
@@ -103,7 +107,7 @@ input::placeholder {
   background-color: white;
   height: 10%;
   margin-left: 1%;
-  padding-top: 2px;
+  padding-top: 5px;
   padding-bottom: 15px;
   padding-left: 25px;
   display: flex;
@@ -171,9 +175,9 @@ input::placeholder {
   background-color: rgb(2, 144, 255);
   color: white;
   border: none;
-  padding: 10px;
   border-radius: 5px;
-  width: 50%;
+  width: 11.5rem;
+  height: 2.063rem;
   font-stretch: normal;
   font-style: normal;
   line-height: normal;
@@ -259,9 +263,9 @@ input::placeholder {
 .update-progress {
   display: flex;
   flex-direction: column;
-  justify-content: left;
   width: 100%;
   padding-left: 5%;
+  justify-content: center;
 }
 
 .update-progress span {
