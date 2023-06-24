@@ -1,9 +1,9 @@
 <a name="readme-top"></a>
-<img height='150px' width='200px' style="margin: auto" src="./logo.PNG">
 <div align="center">
-
+<img height='150px' width='200px' style="margin: auto" src="./logo.PNG">
+</div>
+<div align="center">
 # BOOKSTORE
-
 </div>
 
 <!-- TABLE OF CONTENTS -->
