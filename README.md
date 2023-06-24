@@ -3,7 +3,7 @@
 <img style="margin: auto" src="./logo.PNG">
 </div>
 <div align="center">
-# BOOKSTORE
+&nbsp;
 </div>
 
 <!-- TABLE OF CONTENTS -->
@@ -30,11 +30,7 @@
 <!-- PROJECT DESCRIPTION -->
 
 ## 📖 BOOKSTORE APP <a name="about-project"></a>
-
-This is Bookstore App where you can add and remove books.
-
-Make simple calculations.
-Read a random math-related quote.
+This is Bookstore App built with JavaScript (ES6) that mimics a library where a user can add/remove books using the [ Bookstore API](https://bookstore-w15d.onrender.com/). It splits the code base into modules for easy management.
 
 ## 🛠 Built With <a name="built-with"></a>
 
