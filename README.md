@@ -1,6 +1,6 @@
 <a name="readme-top"></a>
 <div align="center">
-<img height='150px' width='200px' style="margin: auto" src="./logo.PNG">
+<img style="margin: auto" src="./logo.PNG">
 </div>
 <div align="center">
 # BOOKSTORE
