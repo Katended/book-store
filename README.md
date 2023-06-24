@@ -105,7 +105,11 @@ To test this project:
 You can deploy this project:
 + on any web browser
 
+### Demo
 
+Please click [here](https://bookstore-w15d.onrender.com/) for the demo
+
+<p align="right">(<a href="#demo">back to top</a>)</p>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
